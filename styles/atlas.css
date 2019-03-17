@@ -1,0 +1,44 @@
+/** todo : move the transition properties inside the javascript **/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+    background-color: white;
+}
+
+.map {
+    transform-origin: center;
+    transform-style:  preserve-3d;
+    cursor:           pointer;
+
+    transition: transform .3s ease-out;
+}
+
+.map:active {
+    cursor: -webkit-grabbing;
+    cursor:    -moz-grabbing;
+    cursor:         grabbing;
+}
+
+.face { transition: transform .3s ease-out; }
+.pair { transition: transform .3s ease-out; }
+
+.gm-style > div:nth-child(2), .gmnoprint > div, div.gmnoprint.gm-style-cc { display: none; }
+
+img[src$=".png"] {
+    display: none;
+}
