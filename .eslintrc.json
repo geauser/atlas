@@ -1,0 +1,36 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "globals": {
+    "google": true
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "no-dupe-class-members": 0,
+    "indent": [
+      "error",
+      2
+    ],
+    "no-console": 0,
+    "no-useless-escape": 0,
+
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ]
+  }
+}
